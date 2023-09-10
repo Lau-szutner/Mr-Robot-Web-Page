@@ -3,6 +3,10 @@
   padding: 0px;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 @font-face {
   font-family: 'Mrrobot';
   src: url(/Fuentes/MR\ROBOT.ttf);
@@ -79,12 +83,12 @@ nav img {
   height: 100vh;
 }
 
-#tramaTitulo {
+.titulos {
   font-size: 5em;
   font-family: 'Mrrobot';
   font-weight: normal;
   color: red;
-  padding: 30px;
+  padding: 20px;
 }
 #Articulo {
   display: grid;
@@ -135,6 +139,15 @@ nav img {
 }
 
 .fotosTrama:hover {
-  transform: scale(1.1); /* Aumenta ligeramente el tamaño de la imagen */
-  box-shadow: 0 0 10px rgba(255, 255, 255, 0.7); /* Agrega un brillo en los bordes */
+  transform: scale(1.1);
+  box-shadow: 0 0 50px #df2d30db;
+}
+
+/* ------------------------TRAMA---------------------- */
+
+#personajes {
+  height: 100vh;
+  background-image: url();
+  background-position: center;
+  background-size: cover;
 }
