@@ -10,7 +10,7 @@
 
 header {
   height: 100vh;
-  background-image: url('../img/Mr.jpg');
+  background-image: url('../img/Inicio/Mr.jpg');
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -84,17 +84,19 @@ nav img {
   font-family: 'Mrrobot';
   font-weight: normal;
   color: red;
-  margin: 30px;
+  padding: 30px;
 }
-
+#Articulo {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
 #articleTrama {
-  width: 50%;
   display: flex;
   flex-direction: column;
 }
 
 #trama {
-  background-image: url(../img/fondo-trama.jpg);
+  background-image: url(../img/Inicio/fondo-trama.jpg);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -117,4 +119,22 @@ nav img {
   font-family: 'Chakra Petch', sans-serif;
   font-family: 'Roboto Mono', monospace;
   font-size: 1em;
+}
+
+.divTramaFotos {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  place-items: center;
+}
+
+.fotosTrama {
+  width: 85%;
+  border-radius: 10px;
+  transition: all 1s;
+}
+
+.fotosTrama:hover {
+  transform: scale(1.1); /* Aumenta ligeramente el tamaño de la imagen */
+  box-shadow: 0 0 10px rgba(255, 255, 255, 0.7); /* Agrega un brillo en los bordes */
 }
