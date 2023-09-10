@@ -1,0 +1,120 @@
+* {
+  margin: 0px;
+  padding: 0px;
+}
+
+@font-face {
+  font-family: 'Mrrobot';
+  src: url(/Fuentes/MR\ROBOT.ttf);
+}
+
+header {
+  height: 100vh;
+  background-image: url('../img/Mr.jpg');
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.contenedorNav {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.navItems {
+  list-style: none;
+  padding: 15px;
+  color: red;
+  display: flex;
+  align-items: center;
+  font-size: 1.5em;
+  transition: background-color 0.5s;
+  font-family: 'Mrrobot';
+}
+
+.navItems:hover {
+  background-color: red;
+  color: white;
+  color: black;
+}
+
+.navItems a {
+  text-decoration: none;
+  color: inherit;
+}
+nav {
+  background-color: black;
+  display: flex;
+  justify-content: space-between;
+}
+
+nav img {
+  height: 100px;
+}
+
+.pegatina {
+  transition: all 1s;
+}
+.pegatina:hover {
+  transform: rotate3d(0, 100, 100, 360deg);
+}
+
+#imagen {
+  height: 80vh;
+  display: flex;
+  justify-content: end;
+  align-items: center;
+}
+
+#imagen h1 {
+  font-family: 'mrrobot';
+  font-weight: normal;
+  color: red;
+  font-size: 700%;
+}
+
+/* ------------------------TRAMA---------------------- */
+
+#trama {
+  height: 100vh;
+}
+
+#tramaTitulo {
+  font-size: 5em;
+  font-family: 'Mrrobot';
+  font-weight: normal;
+  color: red;
+  margin: 30px;
+}
+
+#articleTrama {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+}
+
+#trama {
+  background-image: url(../img/fondo-trama.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.textosDiv {
+  transition: all 1s;
+  margin: 10px;
+  border-radius: 5px;
+  padding: 5px;
+}
+
+.textosDiv:hover {
+  background-color: rgba(62, 62, 62, 0.727);
+}
+
+.textosTrama {
+  margin: 10px;
+  color: white;
+  font-family: 'Chakra Petch', sans-serif;
+  font-family: 'Roboto Mono', monospace;
+  font-size: 1em;
+}
