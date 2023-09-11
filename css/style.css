@@ -19,6 +19,22 @@ header {
   background-size: cover;
   background-repeat: no-repeat;
 }
+/* ---------------NavBar---------------- */
+.pegatina {
+  transition: all 1s;
+}
+.pegatina:hover {
+  transform: rotate3d(0, 100, 100, 360deg);
+}
+nav {
+  background-color: black;
+  display: flex;
+  justify-content: space-between;
+}
+
+nav img {
+  height: 100px;
+}
 
 .contenedorNav {
   display: flex;
@@ -26,8 +42,7 @@ header {
 }
 
 .navItems {
-  list-style: none;
-  padding: 15px;
+  padding: 1em;
   color: red;
   display: flex;
   align-items: center;
@@ -45,22 +60,6 @@ header {
 .navItems a {
   text-decoration: none;
   color: inherit;
-}
-nav {
-  background-color: black;
-  display: flex;
-  justify-content: space-between;
-}
-
-nav img {
-  height: 100px;
-}
-
-.pegatina {
-  transition: all 1s;
-}
-.pegatina:hover {
-  transform: rotate3d(0, 100, 100, 360deg);
 }
 
 #imagen {
@@ -130,6 +129,7 @@ nav img {
   grid-template-columns: 1fr 1fr;
   grid-template-rows: 1fr 1fr 1fr;
   place-items: center;
+  gap: 5%;
 }
 
 .fotosTrama {
@@ -150,4 +150,62 @@ nav img {
   background-image: url();
   background-position: center;
   background-size: cover;
+}
+
+/* ---------------Media Queries------------------- */
+.menuBurguer {
+  display: none;
+  margin: 30px;
+}
+
+#menuBurguer svg {
+  width: 3em;
+  height: 3em;
+}
+
+@media screen and (max-width: 1000px) {
+  .menuBurguer {
+    display: block;
+    color: red;
+    font-size: 3.5em;
+    border: 0px;
+    border-color: rgba(255, 0, 0, 0.573);
+    background-color: black;
+    margin: 15px;
+  }
+
+  .contenedorNav {
+    display: block;
+    flex-direction: column;
+    align-items: center;
+    display: none;
+  }
+
+  .navItems {
+    justify-content: center;
+  }
+
+  nav {
+    flex-direction: column;
+    width: 100vw;
+    position: fixed;
+  }
+
+  .logo {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .visible {
+    display: block;
+  }
+
+  /* #list2 {
+    display: none;
+  } */
+
+  #imagen {
+    justify-content: center;
+    height: 100vh;
+  }
 }
