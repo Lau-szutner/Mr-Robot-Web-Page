@@ -1,6 +1,7 @@
 * {
   margin: 0px;
   padding: 0px;
+  box-sizing: border-box;
 }
 
 html {
@@ -80,6 +81,11 @@ nav img {
 
 #trama {
   height: 100vh;
+  height: max-content;
+  background-image: url(../img/Inicio/fondo-trama.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .titulos {
@@ -93,47 +99,41 @@ nav img {
   display: grid;
   grid-template-columns: 1fr 1fr;
 }
-#articleTrama {
-  display: flex;
-  flex-direction: column;
-}
-
-#trama {
-  background-image: url(../img/Inicio/fondo-trama.jpg);
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-}
 
 .textosDiv {
   transition: all 1s;
   margin: 10px;
   border-radius: 5px;
   padding: 5px;
+  display: flex;
+  flex-direction: column;
 }
 
 .textosDiv:hover {
-  background-color: rgba(62, 62, 62, 0.727);
+  background-color: rgba(43, 42, 42, 0.897);
 }
 
 .textosTrama {
   margin: 10px;
   color: white;
-  font-family: 'Chakra Petch', sans-serif;
-  font-family: 'Roboto Mono', monospace;
   font-size: 1em;
 }
-
+p {
+  font-family: 'Chakra Petch', sans-serif;
+  font-family: 'Roboto Mono', monospace;
+}
 .divTramaFotos {
+  height: 50%;
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-template-rows: 1fr 1fr 1fr;
   place-items: center;
-  gap: 5%;
+  gap: 20px;
+  margin: 20px;
 }
 
 .fotosTrama {
-  width: 85%;
+  width: 100%;
   border-radius: 10px;
   transition: all 1s;
 }
@@ -144,13 +144,6 @@ nav img {
 }
 
 /* ------------------------TRAMA---------------------- */
-
-#personajes {
-  height: 100vh;
-  background-image: url();
-  background-position: center;
-  background-size: cover;
-}
 
 /* ---------------Media Queries------------------- */
 .menuBurguer {
@@ -163,6 +156,61 @@ nav img {
   height: 3em;
 }
 
+/*------------Personajes------------------*/
+
+#personajes {
+  height: 100vh;
+  background-color: black;
+  /* background-image: url();
+  background-position: center;
+  background-size: cover;
+  position: absolute; */
+}
+#contenedor1 {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  place-items: center;
+  gap: 20px;
+}
+.tarjetas {
+  height: 125px;
+  width: 550px;
+  background-color: red;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  font-size: 2em;
+  border-radius: 15px;
+  overflow: hidden;
+  transition: all 1s;
+}
+
+.tarjetas:hover {
+  transform: scale(1.1);
+  box-shadow: 0 0 50px #df2d30db;
+}
+
+.personajes1 {
+  width: 30%;
+}
+
+/*  */
+
+@media screen and (max-width: 1200px) {
+  .titulos {
+    text-align: center;
+  }
+
+  #Articulo {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .tarjetas {
+    height: 125px;
+    width: 460px;
+  }
+}
 @media screen and (max-width: 1000px) {
   .menuBurguer {
     display: block;
@@ -179,6 +227,11 @@ nav img {
     flex-direction: column;
     align-items: center;
     display: none;
+  }
+
+  #articulo {
+    display: flex;
+    flex-direction: column;
   }
 
   .navItems {
@@ -207,5 +260,16 @@ nav img {
   #imagen {
     justify-content: center;
     height: 100vh;
+  }
+
+  #contenedor1 {
+    grid-template-columns: 1fr;
+    place-items: center;
+    gap: 30px;
+  }
+
+  .tarjetas {
+    height: 130px;
+    width: 600px;
   }
 }
