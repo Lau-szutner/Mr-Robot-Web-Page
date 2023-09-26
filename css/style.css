@@ -10,7 +10,7 @@ html {
 
 @font-face {
   font-family: 'Mrrobot';
-  src: url(/Fuentes/MR\ROBOT.ttf);
+  src: url(../Fuentes/MRROBOT.ttf) format('truetype');
 }
 
 header {
@@ -311,8 +311,17 @@ form button {
   color: white;
 }
 
-.reclutamiento img {
+.carrousel {
   width: 80%;
+  background-color: aqua;
+}
+
+.grande {
+  width: 100%;
+}
+
+.imgCarrousel {
+  width: 100%;
 }
 
 /*  ----------------------MEDIA-------------------*/
