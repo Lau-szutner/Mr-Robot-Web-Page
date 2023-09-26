@@ -423,6 +423,11 @@ form button {
     width: 80%;
   }
 
+  .fotosContenedor {
+    display: flex;
+    flex-direction: column;
+  }
+
   .titulos {
     font-size: 4em;
   }
