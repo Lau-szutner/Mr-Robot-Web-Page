@@ -217,7 +217,7 @@ article ul {
 #fotos {
   height: 100vh;
   width: 100%;
-
+  height: max-content;
   background-color: black;
 }
 .fotosContenedor {
@@ -336,6 +336,11 @@ form button {
     flex-direction: column;
   }
 
+  .fotosContenedor {
+    display: flex;
+    flex-direction: column;
+  }
+
   .tarjetas {
     height: 125px;
     width: 460px;
@@ -358,6 +363,11 @@ form button {
     flex-direction: column;
     align-items: center;
     display: none;
+  }
+
+  .fotosContenedor {
+    display: flex;
+    flex-direction: column;
   }
 
   #articulo {
