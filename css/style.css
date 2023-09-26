@@ -441,4 +441,8 @@ form button {
   .tarjetas p {
     font-size: 0.6em;
   }
+
+  #contacto h2 {
+    font-size: 3em;
+  }
 }
