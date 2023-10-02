@@ -3,16 +3,92 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- FUENTES -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@300&family=Roboto+Mono&display=swap"
       rel="stylesheet"
     />
+
+    <!-- FAVICON -->
     <link
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css"
     />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="img/favicons/favicon-16x16.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="img/favicons/favicon-32x32.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="57x57"
+      href="img/favicons/apple-touch-icon-57x57.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="60x60"
+      href="img/favicons/apple-touch-icon-60x60.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="72x72"
+      href="img/favicons/apple-touch-icon-72x72.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="76x76"
+      href="img/favicons/apple-touch-icon-76x76.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="96x96"
+      href="img/favicons/apple-touch-icon-96x96.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="114x114"
+      href="img/favicons/apple-touch-icon-114x114.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="120x120"
+      href="img/favicons/apple-touch-icon-120x120.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="144x144"
+      href="img/favicons/apple-touch-icon-144x144.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="152x152"
+      href="img/favicons/apple-touch-icon-152x152.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="img/favicons/apple-touch-icon-180x180.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="192x192"
+      href="img/favicons/android-icon-192x192.png"
+    />
+    <meta name="msapplication-TileColor" content="#ffffff" />
+    <meta name="theme-color" content="#ffffff" />
+
+    <!-- Hojas de estilos -->
     <link rel="stylesheet" href="css/normalize.css" />
     <link rel="stylesheet" href="css/style.css" />
     <title>Mr robot</title>
@@ -22,8 +98,7 @@
     <header>
       <nav>
         <div class="logo">
-          <img src="img/Inicio/pegatina.png" alt="" class="pegatina" />
-
+          <img src="img/Inicio/pegatina.png" alt="" />
           <button class="menuBurguer" id="abrir">
             <i class="bi bi-list" id="list"></i>
           </button>
@@ -34,11 +109,11 @@
           <li class="navItems"><a href="#trama">Trama</a></li>
           <li class="navItems"><a href="#personajes">Personajes</a></li>
           <li class="navItems"><a href="#fotos">Fotos</a></li>
-          <li class="navItems"><a href="#">Contacto</a></li>
+          <li class="navItems"><a href="#contacto">Contacto</a></li>
         </ul>
       </nav>
 
-      <div id="imagen">
+      <div id="tituloPrincipal">
         <h1 class="titulos">MR ROBOT</h1>
       </div>
     </header>
@@ -46,7 +121,7 @@
     <main>
       <section id="trama">
         <h2 class="titulos">Trama</h2>
-        <article id="Articulo">
+        <article>
           <div class="textosDiv">
             <p class="textosTrama">
               Elliot Alderson es un prodigioso pero trastornado hacker
@@ -94,32 +169,20 @@
             <img
               src="./img/trama-fotos/elliot-darlene.jpg"
               alt="Elliot y Darlene"
-              class="fotosTrama"
             />
             <img
               src="./img/trama-fotos/elliot-mr-robot.jpg"
               alt="Ellior Alderson"
-              class="fotosTrama"
             />
             <img
               src="./img/trama-fotos/elliot-neywork.jpg"
               alt="Elliot en Nueva York"
-              class="fotosTrama"
             />
-            <img
-              src="./img/trama-fotos/elliot-pc.jpg"
-              alt="Elliot hackeando"
-              class="fotosTrama"
-            />
-            <img
-              src="./img/trama-fotos/mr-robot.webp"
-              alt="MR robot"
-              class="fotosTrama"
-            />
+            <img src="./img/trama-fotos/elliot-pc.jpg" alt="Elliot hackeando" />
+            <img src="./img/trama-fotos/mr-robot.webp" alt="MR robot" />
             <img
               src="./img/trama-fotos/new-york.jpg"
               alt="Elliot mirando a su familia en Nueva York"
-              class="fotosTrama"
             />
           </div>
         </article>
@@ -127,7 +190,6 @@
 
       <section id="personajes">
         <h2 class="titulos personajesTi">Personajes</h2>
-
         <div id="contenedor1">
           <div class="tarjetas">
             <p>Elliot Alderson</p>
@@ -231,48 +293,33 @@
 
       <section id="fotos">
         <h2 class="titulos">Fotos</h2>
-        <div class="fotosContenedor">
+        <div>
           <img
             src="img/seccion-Fotos/elliot-1.jpg"
             alt="Elliot mirando sospechosamente"
-            class="fotosSeccion"
           />
-
           <img
             src="img/seccion-Fotos/fsociety-1.jpg"
             alt="Fsociety video amenazante"
-            class="fotosSeccion"
           />
           <img
             src="img/seccion-Fotos/elliot-2.jpeg"
             alt="Elliot mirando de costado"
-            class="fotosSeccion"
           />
-          <img
-            src="img/seccion-Fotos/darlene-2.jpg"
-            alt="Darlene con Elliot"
-            class="fotosSeccion"
-          />
-          <img
-            src="img/seccion-Fotos/fsociety-2.jpg"
-            alt="Fsociety reunidos"
-            class="fotosSeccion"
-          />
-          <img src="img/seccion-Fotos/leon.jpg" alt="" class="fotosSeccion" />
+          <img src="img/seccion-Fotos/darlene-2.jpg" alt="Darlene con Elliot" />
+          <img src="img/seccion-Fotos/fsociety-2.jpg" alt="Fsociety reunidos" />
+          <img src="img/seccion-Fotos/leon.jpg" alt="Leon sentado en un auto" />
           <img
             src="img/seccion-Fotos/fsociety-3.jpeg"
             alt="Fsociety con dinero"
-            class="fotosSeccion"
           />
           <img
             src="img/seccion-Fotos/elliot-3.jpg"
             alt="Elliot mirando hacia abajo"
-            class="fotosSeccion"
           />
           <img
             src="img/seccion-Fotos/mr-robot.jpg"
             alt="Fachada de tienda de Mr robot"
-            class="fotosSeccion"
           />
         </div>
       </section>
