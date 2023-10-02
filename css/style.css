@@ -204,7 +204,7 @@ p {
   width: 100%;
   height: max-content;
   background-color: black;
-  background-image: url('../img/Inicio/fondo-Personajes.jpg');
+  background-image: url('../img/Inicio/fondo-fotos.jpg');
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -311,6 +311,7 @@ form button {
 
 .footer {
   height: 70vh;
+  height: max-content;
   background-color: gray;
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -319,7 +320,8 @@ form button {
 
 .footer img {
   width: 50%;
-  border-radius: 30px;
+  border-radius: 60px;
+  padding: 50px;
 }
 
 .footer1 {
@@ -411,10 +413,6 @@ form button {
     display: block;
   }
 
-  /* #list2 {
-    display: none;
-  } */
-
   #imagen {
     justify-content: center;
     height: 100vh;
@@ -431,6 +429,12 @@ form button {
   .tarjetas {
     height: 130px;
     width: 600px;
+  }
+
+  .footer {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr;
   }
 }
 
