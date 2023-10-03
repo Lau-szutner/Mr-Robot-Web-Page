@@ -148,6 +148,7 @@ nav img {
   background-repeat: no-repeat;
   background-size: cover;
   height: max-content;
+  padding-bottom: 10px;
 }
 
 #personajes > div {
