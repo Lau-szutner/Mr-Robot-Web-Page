@@ -1,0 +1,11 @@
+• Escuela de Arte Multimedial Da Vinci
+• CARRERA: Diseño y Programación Web
+• MATERIA: Interacción con Dispositivos Móviles
+• TRABAJO PRÁCTICO: Examen Parcial 1
+• PROFESOR: D’Addezio Alejandro
+• ALUMNO: Lautaro Fernandez Szutner
+• CUATRIMESTRE: 2do Cuatrimestre
+• COMISIÓN: DWT2AV
+• TURNO: Mañana
+• FECHA DE ENTREGA: 03/10/2023
+• URL DEL SITIO: https://lau-szutner.github.io/Mr-Robot-Web-Page/
