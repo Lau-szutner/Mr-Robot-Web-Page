@@ -9,13 +9,13 @@ html {
 }
 
 @font-face {
-  font-family: 'Mrrobot';
-  src: url(../Fuentes/MRROBOT.ttf) format('truetype');
+  font-family: "Mrrobot";
+  src: url(../Fuentes/MRROBOT.ttf) format("truetype");
 }
 
 p {
-  font-family: 'Chakra Petch', sans-serif;
-  font-family: 'Roboto Mono', monospace;
+  font-family: "Chakra Petch", sans-serif;
+  font-family: "Roboto Mono", monospace;
 }
 
 header {
@@ -54,7 +54,7 @@ nav img {
   align-items: center;
   font-size: 1.5em;
   transition: background-color 0.5s;
-  font-family: 'Mrrobot';
+  font-family: "Mrrobot";
 }
 
 .navItems:hover {
@@ -73,9 +73,13 @@ nav img {
   display: flex;
   justify-content: end;
   align-items: center;
-  font-family: 'mrrobot';
-  font-weight: normal;
   color: red;
+  font-family: "Mrrobot";
+  font-size: 5em;
+}
+
+h1 {
+  font-weight: 100;
 }
 
 /* ------------------------TRAMA---------------------- */
@@ -90,8 +94,9 @@ nav img {
 }
 
 .titulos {
+  text-align: center;
   font-size: 5em;
-  font-family: 'Mrrobot';
+  font-family: "Mrrobot";
   font-weight: normal;
   color: red;
   padding: 20px;
@@ -143,7 +148,7 @@ nav img {
 
 #personajes {
   height: 100vh;
-  background-image: url('../img/Inicio/d.jpg');
+  background-image: url("../img/Inicio/d.jpg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -189,7 +194,7 @@ nav img {
 #fotos {
   height: 100vh;
   height: max-content;
-  background-image: url('../img/Inicio/fondo-fotos.jpg');
+  background-image: url("../img/Inicio/fondo-fotos.jpg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -241,13 +246,13 @@ form {
   padding: 20px;
 }
 .form-grupo {
-  font-family: 'Chakra Petch', sans-serif;
-  font-family: 'Roboto Mono', monospace;
+  font-family: "Chakra Petch", sans-serif;
+  font-family: "Roboto Mono", monospace;
   margin-bottom: 10px;
 }
-.form-grupo [type='placeholder'] {
-  font-family: 'Chakra Petch', sans-serif;
-  font-family: 'Roboto Mono', monospace;
+.form-grupo [type="placeholder"] {
+  font-family: "Chakra Petch", sans-serif;
+  font-family: "Roboto Mono", monospace;
   margin-bottom: 10px;
 }
 
@@ -346,9 +351,6 @@ footer div {
   .contenedorVideos {
     flex-direction: column;
     align-items: center;
-  }
-  .titulos {
-    text-align: center;
   }
 
   #trama article {

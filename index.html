@@ -102,7 +102,7 @@
       <nav>
         <div class="logo">
           <img src="img/Inicio/pegatina.png" alt="Logo de F society" />
-          <button class="menuBurguer" id="abrir">
+          <button class="menuBurguer" id="abrir" aria-label="menu hamburguesa">
             <i class="bi bi-list" id="list"></i>
           </button>
         </div>
@@ -117,7 +117,7 @@
       </nav>
 
       <div id="tituloPrincipal">
-        <h1 class="titulos">Mr ROBOT</h1>
+        <h1>Mr robot</h1>
       </div>
     </header>
 
@@ -170,27 +170,92 @@
           </div>
 
           <div class="divTramaFotos">
-            <img
-              src="./img/trama-fotos/elliot-darlene.jpeg"
-              alt="Elliot y Darlene"
-            />
-            <img
-              src="./img/trama-fotos/elliot-mr-robot.jpg"
-              alt="Ellior Alderson"
-            />
-            <img
-              src="./img/trama-fotos/elliot-neywork.jpeg"
-              alt="Elliot en Nueva York"
-            />
-            <img
-              src="./img/trama-fotos/elliot-pc.jpeg"
-              alt="Elliot hackeando"
-            />
-            <img src="./img/trama-fotos/mr-robot.webp" alt="MR robot" />
-            <img
-              src="./img/trama-fotos/new-york.jpg"
-              alt="Elliot mirando a su familia en Nueva York"
-            />
+            <picture>
+              <source
+                media="(min-width: 500px)"
+                srcset="./img/trama-fotos/elliot-darlene-L.jpeg"
+              />
+              <source
+                media="(max-width: 500px)"
+                srcset="./img/trama-fotos/elliot-darlene-S.jpg"
+              />
+              <img
+                src="./img/trama-fotos/elliot-darlene-L.jpg"
+                alt="Elliot y Darlene"
+              />
+            </picture>
+
+            <picture>
+              <source
+                media="(min-width: 500px)"
+                srcset="./img/trama-fotos/elliot-mr-robot-L.jpg"
+              />
+              <source
+                media="(max-width: 500px)"
+                srcset="./img/trama-fotos/elliot-mr-robot-S.jpg"
+              />
+              <img
+                src="./img/trama-fotos/elliot-mr-robot-L.jpg"
+                alt="Elliot Alderson"
+              />
+            </picture>
+
+            <picture>
+              <source
+                media="(min-width: 500px)"
+                srcset="./img/trama-fotos/elliot-neywork-L.jpeg"
+              />
+              <source
+                media="(max-width: 500px)"
+                srcset="./img/trama-fotos/elliot-neywork-S.jpg"
+              />
+              <img
+                src="./img/trama-fotos/elliot-neywork-L.jpeg"
+                alt="Elliot en Nueva York"
+              />
+            </picture>
+
+            <picture>
+              <source
+                media="(min-width: 500px)"
+                srcset="./img/trama-fotos/elliot-pc-L.jpeg"
+              />
+              <source
+                media="(max-width: 500px)"
+                srcset="./img/trama-fotos/elliot-pc-S.jpg"
+              />
+              <img
+                src="./img/trama-fotos/elliot-pc-L.jpeg"
+                alt="Elliot hackeando"
+              />
+            </picture>
+
+            <picture>
+              <source
+                media="(min-width: 500px)"
+                srcset="./img/trama-fotos/mr-robot-L.jpg"
+              />
+              <source
+                media="(max-width: 500px)"
+                srcset="./img/trama-fotos/mr-robot-S.jpg"
+              />
+              <img src="./img/trama-fotos/mr-robot-L.jpg" alt="MR robot" />
+            </picture>
+
+            <picture>
+              <source
+                media="(min-width: 500px)"
+                srcset="./img/trama-fotos/new-york-L.jpg"
+              />
+              <source
+                media="(max-width: 500px)"
+                srcset="./img/trama-fotos/new-york-S.jpg"
+              />
+              <img
+                src="./img/trama-fotos/new-york-L.jpg"
+                alt="Elliot mirando a su familia en Nueva York"
+              />
+            </picture>
           </div>
         </article>
       </section>
